@@ -12,3 +12,134 @@ body {
   color: black;
   margin: 0;
 }
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.search-container {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  position: fixed;
+  background: linear-gradient(180deg, rgba(90,83,213,1) 0%, rgba(140,140,215,1) 35%, rgba(255,255,255,1) 100%);
+}
+
+.search-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-form input {
+  width: 20%;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  padding: 10px;
+  font: inherit;
+}
+
+.search-form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5em;
+  border: none;
+  background-color: rgb(152, 143, 236);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-form button:hover,
+.search-form button:focus {
+  background-color: #5c31ad;
+}
+
+.gallery-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 25px;
+}
+
+.gallery,
+.info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery {
+  margin-left: -20px;
+  padding-top: 80px;
+  justify-content: center;
+}
+
+.gallery__link {
+  margin-top: 20px;
+  margin-left: 20px;
+  min-width: 320px;
+
+  border: 2px solid rgb(241, 238, 238);
+  border-radius: 4px;
+}
+
+.gallery__link:hover,
+.gallery__link:focus {
+  box-shadow: 0 1px 1px rgba(19, 11, 94, 0.12), 0 4px 4px rgba(27, 10, 105, 0.06),
+    1px 4px 6px rgba(31, 23, 105, 0.16);
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.gallery-item__img {
+  display: block;
+  height: 30vh;
+  object-fit: cover;
+}
+
+.info {
+  padding: 15px;
+  justify-content: space-around;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+.info-item:not(:first-child) {
+  margin-left: 5px;
+}
+
+.btn-load-more.is-hidden {
+  display: none;
+}
+
+.btn-load-more {
+  display: block;
+  margin: 25px auto 0 auto;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4922a3;
+  box-shadow: 0 3px 4px 0 rgba(17, 6, 80, 0.3), 0 4px 8px 4px rgba(43, 10, 104, 0.15);
+  font: inherit;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-load-more:hover {
+  background-color: #7196db;
+  transition: all 0.3s;
+}
